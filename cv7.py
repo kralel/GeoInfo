@@ -75,9 +75,10 @@ def inverseHash(j, nr):
     #Compute 1D to 3D
     nr = int(nr)
     # j=jx+jy*nr+jz*nr**2
-    jx = j
-    jy = j/nr
-    jz = j/(nr**2)
+    jz = j//(nr**2)
+    j = j - jz*(nr**2)
+    jy = j//nr
+    jx = j - nr*jy
     return jx, jy ,jz
 
 def indexPoints(X, Y, Z, xmin, ymin, zmin, dx, dy, dz):
