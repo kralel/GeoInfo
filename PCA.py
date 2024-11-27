@@ -20,4 +20,11 @@ print("vlastní vektor: \n", evec)
 
 #Compute amount of information in PCA in %
 info = eval[0]/(eval[0]+eval[1])*100
-print(f"První hlavní komponenta obsahuje {info:.2f} % informace datového souboru.")    
+print(f"První hlavní komponenta obsahuje: \n {info:.2f} %")
+
+#Create and draw a scatter plot
+plot.scatter(X, Y, c = "r", marker = ".", s = 50)
+plot.title("Metoda hlavních komponent")
+plot.xlabel("Souřadnice x")
+plot.ylabel("Souřadnice y")
+plot.show()
