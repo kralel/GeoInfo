@@ -18,8 +18,8 @@ print("kovarianční matice: \n", cov_matrix)
 #Compute the eigenvalues and eigenvectors
 eval, evec = np.linalg.eig(cov_matrix)
 
-print("vlastní číslo: \n", eval)
-print("vlastní vektor: \n", evec)
+print("vlastní čísla: \n", eval)
+print("vlastní vektory: \n", evec)
 
 #Compute amount of information in PCA in %
 #For 1. principal component - (1. eigenvalue/sum of eigenvalues)
