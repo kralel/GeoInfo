@@ -1,8 +1,11 @@
 import numpy as np
 from matplotlib import pyplot as plot
 
-X = []
-Y = []
+#X = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+#Y = [1, 2, 3, 4, 10, 9, 8, 7, 6, 5]
+
+X = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Y = [-1, -2, -3, -4, -5, 6, 7, 8, 9, 10]
 
 #Convert the input to an array
 matrix = np.asarray([X, Y])
