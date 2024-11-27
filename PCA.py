@@ -22,7 +22,8 @@ print("vlastní číslo: \n", eval)
 print("vlastní vektor: \n", evec)
 
 #Compute amount of information in PCA in %
-info = eval[0]/(eval[0]+eval[1])*100
+#For 1. principal component - (1. eigenvalue/sum of eigenvalues)
+info = eval[0]/(sum(eval))*100
 print(f"První hlavní komponenta obsahuje: \n {info:.2f} %")
 
 #Create and draw a scatter plot
