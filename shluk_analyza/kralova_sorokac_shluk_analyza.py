@@ -7,16 +7,16 @@ import sklearn.cluster
 
 #Generate ramdom points in 5 cluster
 np.random.seed(3)
-ax = np.asarray(np.random.uniform(12, 25, 30))
-ay = np.asarray(np.random.uniform(8, 15, 30))
-bx = np.asarray(np.random.uniform(-10, 2, 30))
-by = np.asarray(np.random.uniform(-10, 5, 30))
-cx = np.asarray(np.random.uniform(2, 10, 30))
-cy = np.asarray(np.random.uniform(-2, 10, 30))
-dx = np.asarray(np.random.uniform(-5, 10, 30))
-dy = np.asarray(np.random.uniform(12, 25, 30))
-ex = np.asarray(np.random.uniform(10 , 25, 30))
-ey = np.asarray(np.random.uniform(-2, 5, 30))
+ax = np.asarray(np.random.uniform(12, 25, 50))
+ay = np.asarray(np.random.uniform(8, 15, 50))
+bx = np.asarray(np.random.uniform(-10, 2, 50))
+by = np.asarray(np.random.uniform(-10, 5, 50))
+cx = np.asarray(np.random.uniform(2, 10, 50))
+cy = np.asarray(np.random.uniform(-2, 10, 50))
+dx = np.asarray(np.random.uniform(-5, 10, 50))
+dy = np.asarray(np.random.uniform(12, 25, 50))
+ex = np.asarray(np.random.uniform(10 , 25, 50))
+ey = np.asarray(np.random.uniform(-2, 5, 50))
 
 #Join x-coordnite and y-coordinte of all points
 x = np.concatenate((ax, bx, cx, dx, ex))
