@@ -25,11 +25,11 @@ y = np.concatenate((ay, by, cy, dy, ey))
 #print(ax, ay, bx, by, cx, cy, dx, dy, ex, ey)
 
 #Plot of generated points
-plt.scatter(ax, ay, c="r", s=20)
-plt.scatter(bx, by, c="b", s=20)
-plt.scatter(cx, cy, c="y", s=20)
-plt.scatter(dx, dy, c="g", s=20)
-plt.scatter(ex, ey, c="m", s=20)
+plt.scatter(ax, ay, c="r", s=10)
+plt.scatter(bx, by, c="b", s=10)
+plt.scatter(cx, cy, c="y", s=10)
+plt.scatter(dx, dy, c="g", s=10)
+plt.scatter(ex, ey, c="m", s=10)
 plt.show()
 
 
@@ -41,7 +41,7 @@ points = list(zip(x, y))
 kmeans = sklearn.cluster.KMeans(n_clusters = 5)
 kmeans.fit(points)
 
-plt.scatter(x, y, c=kmeans.labels_, s=20)
+plt.scatter(x, y, c=kmeans.labels_, s=10)
 plt.show()
 
 
@@ -49,5 +49,5 @@ plt.show()
 hierarchical_cluster = sklearn.cluster.AgglomerativeClustering(n_clusters = 5)
 hierarchical_cluster.fit(points)
 
-plt.scatter(x, y, c=hierarchical_cluster.labels_, s=20)
+plt.scatter(x, y, c=hierarchical_cluster.labels_, s=10)
 plt.show()
